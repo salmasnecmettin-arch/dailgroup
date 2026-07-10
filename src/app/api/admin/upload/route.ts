@@ -29,17 +29,20 @@ export async function POST(request: Request) {
   const supabase = await createClient();
   const {
     data: { user },
+    error: userError,
   } = await supabase.auth.getUser();
   if (!user) {
-    return NextResponse.json({ error: "Yetkisiz." }, { status: 401 });
+    console.error("[upload] no session/user", userError?.message);
+    return NextResponse.json({ error: "Oturum bulunamadı. Lütfen tekrar giriş yapın." }, { status: 401 });
   }
-  const { data: profile } = await supabase
+  const { data: profile, error: profileError } = await supabase
     .from("profiles")
     .select("role")
     .eq("id", user.id)
     .maybeSingle();
   if (!profile || !["admin", "editor", "staff"].includes(profile.role)) {
-    return NextResponse.json({ error: "Yetkisiz." }, { status: 403 });
+    console.error("[upload] profile check failed", { userId: user.id, profile, profileError: profileError?.message });
+    return NextResponse.json({ error: "Bu işlem için yetkiniz yok." }, { status: 403 });
   }
 
   const formData = await request.formData();

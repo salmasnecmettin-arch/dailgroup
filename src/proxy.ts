@@ -36,10 +36,20 @@ export async function proxy(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
-  const isAdminRoute = request.nextUrl.pathname.startsWith("/admin");
-  const isLoginRoute = request.nextUrl.pathname === "/admin/login";
+  const pathname = request.nextUrl.pathname;
+  const isApiRoute = pathname.startsWith("/api/admin");
+  const isAdminPage = pathname.startsWith("/admin") && !isApiRoute;
+  const isLoginRoute = pathname === "/admin/login";
 
-  if (isAdminRoute && !isLoginRoute && !user) {
+  // API routes: never redirect (would turn a fetch() call into an HTML
+  // response). They do their own auth check; we only need this middleware
+  // to run so the session/cookies get refreshed before the route handler
+  // reads them.
+  if (isApiRoute) {
+    return response;
+  }
+
+  if (isAdminPage && !isLoginRoute && !user) {
     const url = request.nextUrl.clone();
     url.pathname = "/admin/login";
     return NextResponse.redirect(url);
@@ -55,5 +65,5 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/admin/:path*"],
+  matcher: ["/admin/:path*", "/api/admin/:path*"],
 };
