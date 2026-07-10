@@ -21,14 +21,15 @@ export default function AdminLoginPage() {
         <form action={formAction} className="mt-8 space-y-4">
           <div>
             <label className="mb-1.5 block text-sm font-medium text-dail-navy-900/70">
-              E-posta
+              Kullanıcı Adı
             </label>
             <input
-              type="email"
-              name="email"
+              type="text"
+              name="username"
               required
+              autoComplete="username"
               className="w-full rounded-xl border border-dail-navy-900/10 px-4 py-3 text-sm outline-none focus:border-dail-red-500 focus:ring-2 focus:ring-dail-red-500/20"
-              placeholder="admin@dailgroup.com"
+              placeholder="dailgrup"
             />
           </div>
           <div>

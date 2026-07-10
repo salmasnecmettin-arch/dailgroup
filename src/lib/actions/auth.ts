@@ -2,16 +2,20 @@
 
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { usernameToEmail } from "@/lib/auth-config";
 
 export async function signIn(_prev: { error?: string } | undefined, formData: FormData) {
-  const email = String(formData.get("email") ?? "");
+  const username = String(formData.get("username") ?? "");
   const password = String(formData.get("password") ?? "");
 
   const supabase = await createClient();
-  const { error } = await supabase.auth.signInWithPassword({ email, password });
+  const { error } = await supabase.auth.signInWithPassword({
+    email: usernameToEmail(username),
+    password,
+  });
 
   if (error) {
-    return { error: "E-posta veya şifre hatalı." };
+    return { error: "Kullanıcı adı veya şifre hatalı." };
   }
 
   redirect("/admin");
