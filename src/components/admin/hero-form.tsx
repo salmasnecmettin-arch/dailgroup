@@ -7,6 +7,7 @@ import type { HeroContent } from "@/lib/types";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { ImageUploadField } from "./image-upload-field";
 
 type FormState = { ok: boolean; error?: string } | null;
 
@@ -36,16 +37,14 @@ export function HeroForm({ hero, disabled }: { hero: HeroContent; disabled?: boo
         <Label htmlFor="description">Açıklama</Label>
         <Textarea id="description" name="description" defaultValue={hero.description} className="mt-1.5" rows={3} />
       </div>
-      <div>
-        <Label htmlFor="background_image">Arkaplan Görseli (yol)</Label>
-        <Input
-          id="background_image"
-          name="background_image"
-          defaultValue={hero.backgroundImage}
-          placeholder="/images/hero/hero-bg-01.jpg"
-          className="mt-1.5"
-        />
-      </div>
+      <ImageUploadField
+        name="background_image"
+        label="Arkaplan Görseli"
+        kind="hero"
+        defaultValue={hero.backgroundImage}
+        disabled={disabled}
+        hint="Boş bırakılırsa soyut marka illüstrasyonu gösterilir."
+      />
       <div className="grid grid-cols-2 gap-4">
         <div>
           <Label htmlFor="primary_cta_label">Ana Buton Metni</Label>

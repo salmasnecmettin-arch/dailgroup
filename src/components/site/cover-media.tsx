@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { Building2 } from "lucide-react";
+import { ImageOff, type LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 /**
  * Renders a photo when `src` is set; otherwise falls back to a branded
  * gradient + icon treatment (used for sections without source photography
- * yet, e.g. İnşaat Hizmetleri).
+ * yet — e.g. İnşaat Hizmetleri, or a brand whose supplied photos turned out
+ * to be a different company's product).
  */
 export function CoverMedia({
   src,
@@ -13,12 +14,14 @@ export function CoverMedia({
   sizes,
   className,
   imageClassName,
+  fallbackIcon: Icon = ImageOff,
 }: {
   src: string;
   alt: string;
   sizes?: string;
   className?: string;
   imageClassName?: string;
+  fallbackIcon?: LucideIcon;
 }) {
   if (!src) {
     return (
@@ -28,7 +31,7 @@ export function CoverMedia({
           className,
         )}
       >
-        <Building2 className="h-20 w-20 text-white/10" strokeWidth={1} />
+        <Icon className="h-20 w-20 text-white/10" strokeWidth={1} />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(227,30,36,0.15),transparent_60%)]" />
       </div>
     );

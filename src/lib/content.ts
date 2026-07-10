@@ -62,8 +62,6 @@ export const brands: Brand[] = [
     gallery: [
       "/images/et-urunleri/et-urunleri-kokorec-sandvic-01.jpg",
       "/images/et-urunleri/et-urunleri-sucuk-rulo-dilimli-01.jpg",
-      "/images/et-urunleri/et-urunleri-sarkuteri-cesitleri-namet-01.jpg",
-      "/images/et-urunleri/et-urunleri-dana-kofte-namet-01.jpg",
     ],
     order: 1,
     active: true,
@@ -80,12 +78,12 @@ export const brands: Brand[] = [
       "Tavuk eti; yüksek protein oranı, düşük yağ içeriği ve uygun fiyatı sayesinde hem ev mutfaklarının hem de restoran/otel işletmelerinin vazgeçilmezleri arasındadır. Kaliteli tavuk ürünlerinde dikkat edilmesi gereken en önemli noktalar; kesim ve paketleme aşamalarında hijyen standartlarına uyum, soğuk zincirin korunması ve ürünün tazeliğinin son tüketiciye kadar muhafaza edilmesidir. DAIL GROUP, bu süreçlerin her aşamasında titizlikle çalışır.",
     color: "#e2721c",
     logo: "",
-    cover: "/images/tavuk/tavuk-dondurulmus-pilic-senpilic-01.jpg",
-    gallery: [
-      "/images/tavuk/tavuk-pilic-nugget-senpilic-01.jpg",
-      "/images/tavuk/tavuk-pilic-doner-01.jpg",
-      "/images/tavuk/tavuk-yaprak-doner-istanbul-01.jpg",
-    ],
+    // NOTE: the only tavuk photos supplied were packaging shots of a
+    // different company's products (Şenpiliç, İstanbul) — using them would
+    // misrepresent A Piliç. Left empty until a real A Piliç / DAIL GROUP
+    // photo is uploaded via the admin panel.
+    cover: "",
+    gallery: ["/images/tavuk/tavuk-pilic-doner-01.jpg"],
     order: 2,
     active: true,
   },

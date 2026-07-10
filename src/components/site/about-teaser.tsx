@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, BadgeCheck, ShieldCheck, Users } from "lucide-react";
+import { CoverMedia } from "./cover-media";
 
 const points = [
   { icon: ShieldCheck, label: "Kaliteli Hizmet" },
@@ -61,33 +61,27 @@ export function AboutTeaser() {
           transition={{ duration: 0.7 }}
           className="grid grid-cols-2 gap-4"
         >
-          <div className="relative col-span-2 h-56 overflow-hidden rounded-3xl sm:h-64">
-            <Image
-              src="/images/et-urunleri/cover.jpg"
-              alt="Gıda ürünleri"
-              fill
-              className="object-cover transition-transform duration-700 hover:scale-105"
-              sizes="(min-width: 1024px) 50vw, 100vw"
-            />
-          </div>
-          <div className="relative h-44 overflow-hidden rounded-3xl sm:h-56">
-            <Image
-              src="/images/tavuk/cover.jpg"
-              alt="Tavuk ürünleri"
-              fill
-              className="object-cover transition-transform duration-700 hover:scale-105"
-              sizes="(min-width: 1024px) 25vw, 50vw"
-            />
-          </div>
-          <div className="relative h-44 overflow-hidden rounded-3xl sm:h-56">
-            <Image
-              src="/images/insaat/cover.jpg"
-              alt="İnşaat hizmetleri"
-              fill
-              className="object-cover transition-transform duration-700 hover:scale-105"
-              sizes="(min-width: 1024px) 25vw, 50vw"
-            />
-          </div>
+          <CoverMedia
+            src="/images/et-urunleri/et-urunleri-sucuk-ahsap-tabak-01.jpg"
+            alt="Gıda ürünleri"
+            className="col-span-2 h-56 rounded-3xl sm:h-64"
+            imageClassName="transition-transform duration-700 hover:scale-105"
+            sizes="(min-width: 1024px) 50vw, 100vw"
+          />
+          <CoverMedia
+            src="/images/tavuk/tavuk-pilic-doner-01.jpg"
+            alt="Tavuk ürünleri"
+            className="h-44 rounded-3xl sm:h-56"
+            imageClassName="transition-transform duration-700 hover:scale-105"
+            sizes="(min-width: 1024px) 25vw, 50vw"
+          />
+          <CoverMedia
+            src=""
+            alt="İnşaat hizmetleri"
+            className="h-44 rounded-3xl sm:h-56"
+            imageClassName="transition-transform duration-700 hover:scale-105"
+            sizes="(min-width: 1024px) 25vw, 50vw"
+          />
         </motion.div>
       </div>
     </section>

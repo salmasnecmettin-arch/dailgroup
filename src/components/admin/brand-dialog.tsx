@@ -21,6 +21,8 @@ import {
 } from "@/components/ui/select";
 import { upsertBrand } from "@/lib/actions/admin";
 import type { Brand } from "@/lib/types";
+import { ImageUploadField } from "./image-upload-field";
+import { GalleryUploadField } from "./gallery-upload-field";
 
 type FormState = { ok: boolean; error?: string } | null;
 
@@ -110,23 +112,34 @@ export function BrandDialog({ brand, disabled }: { brand?: Brand; disabled?: boo
           </div>
 
           <div className="grid grid-cols-2 gap-4">
-            <div>
-              <Label htmlFor="cover_url">Kapak Görseli (yol)</Label>
-              <Input id="cover_url" name="cover_url" defaultValue={brand?.cover} placeholder="/images/.../gorsel.jpg" className="mt-1.5" />
-            </div>
+            <ImageUploadField
+              name="cover_url"
+              label="Kapak Görseli"
+              kind="cover"
+              defaultValue={brand?.cover}
+              disabled={disabled}
+            />
             <div>
               <Label htmlFor="color">Vurgu Rengi</Label>
               <Input id="color" name="color" type="text" defaultValue={brand?.color ?? "#2b2e83"} className="mt-1.5" />
             </div>
           </div>
 
-          <div>
-            <Label htmlFor="logo_url">Marka Logosu (yol/URL — anasayfadaki kayan şeritte gösterilir)</Label>
-            <Input id="logo_url" name="logo_url" defaultValue={brand?.logo} placeholder="/images/logolar/marka.png" className="mt-1.5" />
-            <p className="mt-1 text-xs text-muted-foreground">
-              Boş bırakılırsa marka adı yazı olarak gösterilir.
-            </p>
-          </div>
+          <ImageUploadField
+            name="logo_url"
+            label="Marka Logosu (anasayfadaki kayan şeritte gösterilir)"
+            kind="logo"
+            defaultValue={brand?.logo}
+            disabled={disabled}
+            hint="Boş bırakılırsa marka adı yazı olarak gösterilir."
+          />
+
+          <GalleryUploadField
+            name="gallery"
+            label="Galeri (ürün sayfasındaki foto grid'i)"
+            defaultValue={brand?.gallery}
+            disabled={disabled}
+          />
 
           <div className="grid grid-cols-2 gap-4">
             <div>

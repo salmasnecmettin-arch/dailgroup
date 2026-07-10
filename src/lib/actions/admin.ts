@@ -91,6 +91,15 @@ export async function upsertBrand(formData: FormData): Promise<ActionResult> {
   const supabase = await createClient();
 
   const originalSlug = String(formData.get("original_slug") ?? "");
+
+  let gallery: string[] = [];
+  try {
+    const parsed = JSON.parse(String(formData.get("gallery") ?? "[]"));
+    if (Array.isArray(parsed)) gallery = parsed.filter((v) => typeof v === "string");
+  } catch {
+    gallery = [];
+  }
+
   const payload = {
     slug: String(formData.get("slug") ?? ""),
     name: String(formData.get("name") ?? ""),
@@ -102,6 +111,7 @@ export async function upsertBrand(formData: FormData): Promise<ActionResult> {
     color: String(formData.get("color") ?? "#2b2e83"),
     logo_url: String(formData.get("logo_url") ?? ""),
     cover_url: String(formData.get("cover_url") ?? ""),
+    gallery,
     order_index: Number(formData.get("order_index") ?? 0),
     active: formData.get("active") === "on",
     updated_at: new Date().toISOString(),

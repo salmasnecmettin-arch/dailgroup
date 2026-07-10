@@ -195,6 +195,13 @@ create table if not exists page_seo (
   updated_at timestamptz not null default now()
 );
 
+-- ---------------------------------------------------------------------
+-- Storage — "media" bucket for admin-uploaded images (covers, logos, hero)
+-- ---------------------------------------------------------------------
+insert into storage.buckets (id, name, public)
+values ('media', 'media', true)
+on conflict (id) do nothing;
+
 -- =========================================================================
 -- Row Level Security
 -- =========================================================================
@@ -312,3 +319,20 @@ drop trigger if exists on_auth_user_created on auth.users;
 create trigger on_auth_user_created
   after insert on auth.users
   for each row execute procedure handle_new_user();
+
+-- Storage policies for the "media" bucket ---------------------------------
+drop policy if exists "public read media" on storage.objects;
+create policy "public read media" on storage.objects
+  for select using (bucket_id = 'media');
+
+drop policy if exists "staff upload media" on storage.objects;
+create policy "staff upload media" on storage.objects
+  for insert with check (bucket_id = 'media' and is_staff());
+
+drop policy if exists "staff update media" on storage.objects;
+create policy "staff update media" on storage.objects
+  for update using (bucket_id = 'media' and is_staff());
+
+drop policy if exists "staff delete media" on storage.objects;
+create policy "staff delete media" on storage.objects
+  for delete using (bucket_id = 'media' and is_staff());
