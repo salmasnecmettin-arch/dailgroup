@@ -124,6 +124,7 @@ export async function getContactInfo() {
     mapEmbedUrl: data.map_embed_url,
     workingHours: data.working_hours,
     social: data.social ?? {},
+    footerImage: data.footer_image ?? "",
   };
 }
 

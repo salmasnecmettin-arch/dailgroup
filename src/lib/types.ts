@@ -49,6 +49,7 @@ export interface ContactInfo {
   mapEmbedUrl: string;
   workingHours: string;
   social: { instagram?: string; facebook?: string; linkedin?: string };
+  footerImage: string;
 }
 
 export interface AboutContent {

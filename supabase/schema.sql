@@ -89,6 +89,7 @@ create table if not exists brands (
 -- safe to re-run even if `brands` already existed from an earlier version of this schema
 alter table brands add column if not exists about text not null default '';
 alter table brands add column if not exists logo_url text not null default '';
+alter table contact_info add column if not exists footer_image text not null default '';
 
 create index if not exists brands_category_idx on brands (category);
 
@@ -133,6 +134,7 @@ create table if not exists contact_info (
   map_embed_url text not null default '',
   working_hours text not null default '',
   social jsonb not null default '{}'::jsonb,
+  footer_image text not null default '',
   updated_at timestamptz not null default now(),
   constraint contact_info_singleton check (id = 1)
 );

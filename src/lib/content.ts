@@ -267,6 +267,7 @@ export const contactInfo: ContactInfo = {
   mapEmbedUrl: `https://maps.google.com/maps?q=${encodeURIComponent(rawAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`,
   workingHours: "Pazartesi - Cumartesi: 08:00 - 18:00",
   social: {},
+  footerImage: "",
 };
 
 export function getBrandsByCategory(category: Brand["category"]) {

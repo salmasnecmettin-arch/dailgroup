@@ -6,7 +6,7 @@ import { ImagePlus, Loader2, X } from "lucide-react";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 
-type Kind = "hero" | "cover" | "gallery" | "logo";
+type Kind = "hero" | "cover" | "gallery" | "logo" | "footer";
 
 export function ImageUploadField({
   name,

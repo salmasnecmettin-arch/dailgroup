@@ -106,10 +106,10 @@ on conflict (id) do update set
   management_message = excluded.management_message,
   updated_at = now();
 
-insert into contact_info (id, address, phone, whatsapp, email, map_embed_url, working_hours, social) values
+insert into contact_info (id, address, phone, whatsapp, email, map_embed_url, working_hours, social, footer_image) values
   (1, 'Güzelyurt, 26223 Sok No:22, 07112 Aksu/Antalya', '+90 532 651 18 30', '905326511830', 'info@dailgroup.com',
    'https://maps.google.com/maps?q=G%C3%BCzelyurt%2C%2026223%20Sok%20No%3A22%2C%2007112%20Aksu%2FAntalya&t=&z=15&ie=UTF8&iwloc=&output=embed',
-   'Pazartesi - Cumartesi: 08:00 - 18:00', '{}'::jsonb)
+   'Pazartesi - Cumartesi: 08:00 - 18:00', '{}'::jsonb, '')
 on conflict (id) do update set
   address = excluded.address,
   phone = excluded.phone,

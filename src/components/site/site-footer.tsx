@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Logo } from "./logo";
@@ -14,8 +15,21 @@ export function SiteFooter({
   const icecek = brands.filter((b) => b.category === "icecek");
 
   return (
-    <footer className="bg-dail-navy-950 text-white/70">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 py-16 sm:grid-cols-2 lg:grid-cols-5 lg:px-8">
+    <footer className="relative overflow-hidden bg-dail-navy-950 text-white/70">
+      {contactInfo.footerImage && (
+        <>
+          <Image
+            src={contactInfo.footerImage}
+            alt=""
+            fill
+            unoptimized={contactInfo.footerImage.startsWith("http")}
+            className="object-cover opacity-25"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-dail-navy-950 via-dail-navy-950/90 to-dail-navy-950" />
+        </>
+      )}
+      <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 py-16 sm:grid-cols-2 lg:grid-cols-5 lg:px-8">
         <div className="sm:col-span-2 lg:col-span-2">
           <Logo tone="light" />
           <p className="mt-4 max-w-sm text-sm leading-relaxed">

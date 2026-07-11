@@ -7,6 +7,7 @@ import type { ContactInfo } from "@/lib/types";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { ImageUploadField } from "./image-upload-field";
 
 type FormState = { ok: boolean; error?: string } | null;
 
@@ -46,6 +47,15 @@ export function ContactForm({ contact, disabled }: { contact: ContactInfo; disab
         <Label htmlFor="map_embed_url">Google Maps Embed URL</Label>
         <Textarea id="map_embed_url" name="map_embed_url" defaultValue={contact.mapEmbedUrl} rows={2} className="mt-1.5" />
       </div>
+
+      <ImageUploadField
+        name="footer_image"
+        label="Footer Arkaplan Görseli"
+        kind="footer"
+        defaultValue={contact.footerImage}
+        disabled={disabled}
+        hint="Boş bırakılırsa footer düz lacivert renkte kalır."
+      />
 
       {state?.error && <p className="text-sm text-dail-red-500">{state.error}</p>}
       {state?.ok && !isPending && <p className="text-sm text-emerald-600">Kaydedildi.</p>}

@@ -75,6 +75,7 @@ export async function updateContactInfo(formData: FormData): Promise<ActionResul
       email: String(formData.get("email") ?? ""),
       map_embed_url: String(formData.get("map_embed_url") ?? ""),
       working_hours: String(formData.get("working_hours") ?? ""),
+      footer_image: String(formData.get("footer_image") ?? ""),
       updated_at: new Date().toISOString(),
     })
     .eq("id", 1);

@@ -17,6 +17,7 @@ const VARIANTS = {
   cover: { width: 1600, height: 1000, fit: "cover" as const },
   gallery: { width: 1200, height: 900, fit: "cover" as const },
   logo: { width: 480, height: 240, fit: "contain" as const },
+  footer: { width: 1920, height: 640, fit: "cover" as const },
 };
 
 type Kind = keyof typeof VARIANTS;
