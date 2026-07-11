@@ -75,9 +75,14 @@ export async function POST(request: Request) {
 
   const path = `${kind}/${randomUUID()}.webp`;
   const admin = createAdminClient();
+  // Must upload as a Blob, not a raw Node Buffer — passing a Buffer directly
+  // gets coerced through a UTF-8 string somewhere in the upload path, which
+  // corrupts binary bytes that aren't valid UTF-8 (they get silently
+  // replaced with U+FFFD), producing an unreadable image file.
+  const blob = new Blob([new Uint8Array(outputBuffer)], { type: "image/webp" });
   const { error: uploadError } = await admin.storage
     .from("media")
-    .upload(path, outputBuffer, { contentType: "image/webp", upsert: false });
+    .upload(path, blob, { contentType: "image/webp", upsert: false });
 
   if (uploadError) {
     return NextResponse.json({ error: uploadError.message }, { status: 500 });
