@@ -44,6 +44,11 @@ export function CoverMedia({
         alt={alt}
         fill
         sizes={sizes ?? "100vw"}
+        // CMS-uploaded images live on Supabase Storage (behind Cloudflare),
+        // whose bot-protection can intermittently reject Next's server-side
+        // optimizer fetch. Skip optimization for remote URLs and let the
+        // browser load them directly — local /public images stay optimized.
+        unoptimized={src.startsWith("http")}
         className={cn("object-cover", imageClassName)}
       />
     </div>

@@ -22,6 +22,7 @@ export function BrandsMarquee({ brands }: { brands: Brand[] }) {
                     src={brand.logo}
                     alt={brand.name}
                     fill
+                    unoptimized={brand.logo.startsWith("http")}
                     className="object-contain"
                     sizes="140px"
                   />

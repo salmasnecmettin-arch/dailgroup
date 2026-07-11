@@ -22,6 +22,7 @@ export function Hero({ heroContent }: { heroContent: HeroContent }) {
             alt="DAIL GROUP"
             fill
             priority
+            unoptimized={heroContent.backgroundImage.startsWith("http")}
             className="object-cover"
             sizes="100vw"
           />
