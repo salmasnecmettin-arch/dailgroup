@@ -23,10 +23,10 @@ export function SiteFooter({
             alt=""
             fill
             unoptimized={contactInfo.footerImage.startsWith("http")}
-            className="object-cover opacity-25"
+            className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-dail-navy-950 via-dail-navy-950/90 to-dail-navy-950" />
+          <div className="absolute inset-0 bg-gradient-to-b from-dail-navy-950/55 via-dail-navy-950/75 to-dail-navy-950/95" />
         </>
       )}
       <div className="relative mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 py-16 sm:grid-cols-2 lg:grid-cols-5 lg:px-8">
