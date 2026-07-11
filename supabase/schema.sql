@@ -291,15 +291,25 @@ create policy "staff manage gallery_items" on gallery_items for all using (is_st
 drop policy if exists "staff manage page_seo" on page_seo;
 create policy "staff manage page_seo" on page_seo for all using (is_staff()) with check (is_staff());
 
+-- helper: is the current user an admin? (SECURITY DEFINER — must NOT query
+-- `profiles` directly from a policy on `profiles` itself, or Postgres RLS
+-- recurses infinitely re-evaluating the same policy for the subquery.)
+create or replace function is_admin()
+returns boolean
+language sql
+security definer
+set search_path = public
+as $$
+  select exists (
+    select 1 from profiles where id = auth.uid() and role = 'admin'
+  );
+$$;
+
 drop policy if exists "user reads own profile" on profiles;
 create policy "user reads own profile" on profiles for select using (auth.uid() = id or is_staff());
 
 drop policy if exists "admin manages profiles" on profiles;
-create policy "admin manages profiles" on profiles for all using (
-  exists (select 1 from profiles where id = auth.uid() and role = 'admin')
-) with check (
-  exists (select 1 from profiles where id = auth.uid() and role = 'admin')
-);
+create policy "admin manages profiles" on profiles for all using (is_admin()) with check (is_admin());
 
 -- Auto-create a profile row (default: staff) whenever a new auth user signs up.
 create or replace function handle_new_user()
