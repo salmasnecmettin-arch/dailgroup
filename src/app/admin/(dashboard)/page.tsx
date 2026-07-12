@@ -21,7 +21,7 @@ export default async function AdminDashboardPage() {
     <div className="space-y-6">
       <div>
         <h1 className="text-2xl font-bold">Dashboard</h1>
-        <p className="text-sm text-muted-foreground">DAIL GROUP yönetim paneline hoş geldiniz.</p>
+        <p className="text-sm text-muted-foreground">DAİL GRUP yönetim paneline hoş geldiniz.</p>
       </div>
 
       {!isSupabaseConfigured && <SupabaseSetupNotice />}

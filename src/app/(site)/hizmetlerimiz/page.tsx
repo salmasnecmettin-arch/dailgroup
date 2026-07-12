@@ -6,9 +6,9 @@ import { CoverMedia } from "@/components/site/cover-media";
 import { getBrands, getCategories } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Hizmetlerimiz | DAIL GROUP",
+  title: "Hizmetlerimiz | DAİL GRUP",
   description:
-    "DAIL GROUP gıda, içecek ve inşaat hizmetleri kapsamındaki tüm bayilikler ve hizmet detayları.",
+    "DAİL GRUP gıda, içecek ve inşaat hizmetleri kapsamındaki tüm bayilikler ve hizmet detayları.",
 };
 
 export default async function ServicesPage() {

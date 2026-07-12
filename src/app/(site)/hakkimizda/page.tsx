@@ -4,9 +4,9 @@ import { getAboutContent, getStats } from "@/lib/data";
 import { CheckCircle2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Hakkımızda | DAIL GROUP",
+  title: "Hakkımızda | DAİL GRUP",
   description:
-    "DAIL GROUP; gıda, içecek ve inşaat sektörlerinde 15 yılı aşkın tecrübesiyle güvenilir bir iş ortağıdır.",
+    "DAİL GRUP; gıda, içecek ve inşaat sektörlerinde 15 yılı aşkın tecrübesiyle güvenilir bir iş ortağıdır.",
 };
 
 export default async function AboutPage() {
@@ -18,7 +18,7 @@ export default async function AboutPage() {
   return (
     <>
       <PageHeader
-        eyebrow="DAILGROUP"
+        eyebrow="DAİL GRUP"
         title="Hakkımızda"
         description={aboutContent.title}
         crumbs={[{ label: "Ana Sayfa", href: "/" }, { label: "Hakkımızda" }]}

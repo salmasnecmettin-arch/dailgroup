@@ -19,7 +19,7 @@ export function Hero({ heroContent }: { heroContent: HeroContent }) {
         >
           <Image
             src={heroContent.backgroundImage}
-            alt="DAIL GROUP"
+            alt="DAİL GRUP"
             fill
             priority
             unoptimized={heroContent.backgroundImage.startsWith("http")}

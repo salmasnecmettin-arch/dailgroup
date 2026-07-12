@@ -88,7 +88,7 @@ export function SiteFooter({
 
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-3 px-5 py-6 text-xs text-white/40 sm:flex-row sm:justify-between lg:px-8">
-          <p>&copy; {new Date().getFullYear()} DAIL GROUP. Tüm hakları saklıdır.</p>
+          <p>&copy; {new Date().getFullYear()} DAİL GRUP. Tüm hakları saklıdır.</p>
           <div className="flex gap-5">
             <Link href="/gizlilik-politikasi" className="hover:text-white/70">Gizlilik Politikası</Link>
             <Link href="/kullanim-sartlari" className="hover:text-white/70">Kullanım Şartları</Link>

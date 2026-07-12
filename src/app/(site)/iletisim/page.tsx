@@ -5,8 +5,8 @@ import { InquiryForm } from "@/components/site/inquiry-form";
 import { getBrands, getContactInfo } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "İletişim | DAIL GROUP",
-  description: "DAIL GROUP ile iletişime geçin — adres, telefon, WhatsApp ve iletişim formu.",
+  title: "İletişim | DAİL GRUP",
+  description: "DAİL GRUP ile iletişime geçin — adres, telefon, WhatsApp ve iletişim formu.",
 };
 
 export default async function ContactPage() {
@@ -64,7 +64,7 @@ export default async function ContactPage() {
                 style={{ border: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="DAIL GROUP konum"
+                title="DAİL GRUP konum"
               />
             </div>
           </div>

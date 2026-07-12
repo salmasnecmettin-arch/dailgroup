@@ -53,9 +53,9 @@ export const brands: Brand[] = [
     category: "gida",
     tagline: "Geleneksel lezzet, modern üretim.",
     description:
-      "Yakup Ağa Et Ürünleri; sucuk, kokoreç ve şarküteri kalemlerinde yüksek kalite standartlarıyla üretim yapan, DAIL GROUP güvencesiyle bölgemize ulaştırdığımız köklü bir markadır.",
+      "Yakup Ağa Et Ürünleri; sucuk, kokoreç ve şarküteri kalemlerinde yüksek kalite standartlarıyla üretim yapan, DAİL GRUP güvencesiyle bölgemize ulaştırdığımız köklü bir markadır.",
     about:
-      "Sucuk ve kokoreç, Anadolu mutfağının en köklü şarküteri lezzetleri arasında yer alır. Kaliteli et ürünlerinde belirleyici unsurlar; etin taze ve hijyenik koşullarda işlenmesi, doğru baharat oranı ve soğuk zincirin kesintisiz sürdürülmesidir. DAIL GROUP olarak bayiliğini yaptığımız Yakup Ağa Et Ürünleri'nde bu standartlara azami önem verilir; ürünler üretimden sofraya kadar soğuk zincir korunarak taşınır ve saklanır.",
+      "Sucuk ve kokoreç, Anadolu mutfağının en köklü şarküteri lezzetleri arasında yer alır. Kaliteli et ürünlerinde belirleyici unsurlar; etin taze ve hijyenik koşullarda işlenmesi, doğru baharat oranı ve soğuk zincirin kesintisiz sürdürülmesidir. DAİL GRUP olarak bayiliğini yaptığımız Yakup Ağa Et Ürünleri'nde bu standartlara azami önem verilir; ürünler üretimden sofraya kadar soğuk zincir korunarak taşınır ve saklanır.",
     color: "#8a1c1c",
     logo: "",
     cover: "/images/et-urunleri/et-urunleri-sucuk-ahsap-tabak-01.jpg",
@@ -73,14 +73,14 @@ export const brands: Brand[] = [
     category: "gida",
     tagline: "Güvenilir kalite, her sofrada.",
     description:
-      "A Piliç; hijyenik üretim tesislerinde işlenen taze tavuk ürünlerini, DAIL GROUP'un güçlü lojistik ağıyla bölgemizdeki işletmelere ulaştırıyoruz.",
+      "A Piliç; hijyenik üretim tesislerinde işlenen taze tavuk ürünlerini, DAİL GRUP'un güçlü lojistik ağıyla bölgemizdeki işletmelere ulaştırıyoruz.",
     about:
-      "Tavuk eti; yüksek protein oranı, düşük yağ içeriği ve uygun fiyatı sayesinde hem ev mutfaklarının hem de restoran/otel işletmelerinin vazgeçilmezleri arasındadır. Kaliteli tavuk ürünlerinde dikkat edilmesi gereken en önemli noktalar; kesim ve paketleme aşamalarında hijyen standartlarına uyum, soğuk zincirin korunması ve ürünün tazeliğinin son tüketiciye kadar muhafaza edilmesidir. DAIL GROUP, bu süreçlerin her aşamasında titizlikle çalışır.",
+      "Tavuk eti; yüksek protein oranı, düşük yağ içeriği ve uygun fiyatı sayesinde hem ev mutfaklarının hem de restoran/otel işletmelerinin vazgeçilmezleri arasındadır. Kaliteli tavuk ürünlerinde dikkat edilmesi gereken en önemli noktalar; kesim ve paketleme aşamalarında hijyen standartlarına uyum, soğuk zincirin korunması ve ürünün tazeliğinin son tüketiciye kadar muhafaza edilmesidir. DAİL GRUP, bu süreçlerin her aşamasında titizlikle çalışır.",
     color: "#e2721c",
     logo: "",
     // NOTE: the only tavuk photos supplied were packaging shots of a
     // different company's products (Şenpiliç, İstanbul) — using them would
-    // misrepresent A Piliç. Left empty until a real A Piliç / DAIL GROUP
+    // misrepresent A Piliç. Left empty until a real A Piliç / DAİL GRUP
     // photo is uploaded via the admin panel.
     cover: "",
     gallery: ["/images/tavuk/tavuk-pilic-doner-01.jpg"],
@@ -94,9 +94,9 @@ export const brands: Brand[] = [
     category: "icecek",
     tagline: "Doğanın saf hali.",
     description:
-      "Beysu doğal kaynak suyu, kaynağından şişelenerek gelen doğallığı ile DAIL GROUP bayiliğinde işletmeniz için düzenli ve zamanında teslim edilir.",
+      "Beysu doğal kaynak suyu, kaynağından şişelenerek gelen doğallığı ile DAİL GRUP bayiliğinde işletmeniz için düzenli ve zamanında teslim edilir.",
     about:
-      "Doğal kaynak suyu, yeraltı kaynaklarından çıktığı haliyle, herhangi bir kimyasal arıtma işlemine tabi tutulmadan doğrudan şişelenen su türüdür. Mineral dengesi kaynağın jeolojik yapısına göre şekillenir ve düzenli tüketimi günlük sıvı ihtiyacının doğal yollarla karşılanmasına katkı sağlar. DAIL GROUP olarak dağıtımını yaptığımız Beysu, kaynağından sofranıza kadar hijyenik koşullarda ulaştırılır.",
+      "Doğal kaynak suyu, yeraltı kaynaklarından çıktığı haliyle, herhangi bir kimyasal arıtma işlemine tabi tutulmadan doğrudan şişelenen su türüdür. Mineral dengesi kaynağın jeolojik yapısına göre şekillenir ve düzenli tüketimi günlük sıvı ihtiyacının doğal yollarla karşılanmasına katkı sağlar. DAİL GRUP olarak dağıtımını yaptığımız Beysu, kaynağından sofranıza kadar hijyenik koşullarda ulaştırılır.",
     color: "#0e5aa7",
     logo: "",
     cover: "/images/icecek/icecek-beysu-dogal-kaynak-suyu-01.jpg",
@@ -111,9 +111,9 @@ export const brands: Brand[] = [
     category: "icecek",
     tagline: "Doğal maden özü.",
     description:
-      "Avşar Soda, doğal maden kaynağından gelen ferahlığıyla restoran ve marketlerin vazgeçilmezleri arasında yer alıyor. DAIL GROUP güvencesiyle sofralarınızda.",
+      "Avşar Soda, doğal maden kaynağından gelen ferahlığıyla restoran ve marketlerin vazgeçilmezleri arasında yer alıyor. DAİL GRUP güvencesiyle sofralarınızda.",
     about:
-      "Doğal maden sodası, yer altından doğal olarak karbondioksit kazanmış maden sularının şişelenmesiyle elde edilir ve içeriğindeki doğal mineraller sayesinde klasik gazlı içeceklerden ayrışır. Özellikle yemek yanında tüketiminde ferahlatıcı etkisiyle tercih edilir. DAIL GROUP olarak Avşar Soda'yı bölgemizdeki restoran, kafe ve marketlere düzenli tedarik zinciriyle ulaştırıyoruz.",
+      "Doğal maden sodası, yer altından doğal olarak karbondioksit kazanmış maden sularının şişelenmesiyle elde edilir ve içeriğindeki doğal mineraller sayesinde klasik gazlı içeceklerden ayrışır. Özellikle yemek yanında tüketiminde ferahlatıcı etkisiyle tercih edilir. DAİL GRUP olarak Avşar Soda'yı bölgemizdeki restoran, kafe ve marketlere düzenli tedarik zinciriyle ulaştırıyoruz.",
     color: "#0f7a6b",
     logo: "",
     cover: "/images/icecek/icecek-avsar-soda-siseler-02.jpg",
@@ -128,9 +128,9 @@ export const brands: Brand[] = [
     category: "icecek",
     tagline: "Uludağ'ın eşsiz kaynağından.",
     description:
-      "Sultan Uludağ Su, Uludağ'ın doğal kaynağından gelen eşsiz lezzetiyle DAIL GROUP bayiliğinde geniş bir müşteri ağına ulaştırılmaktadır.",
+      "Sultan Uludağ Su, Uludağ'ın doğal kaynağından gelen eşsiz lezzetiyle DAİL GRUP bayiliğinde geniş bir müşteri ağına ulaştırılmaktadır.",
     about:
-      "Uludağ'ın kaynak suları, düşük mineral içeriği ve yüksek saflık oranıyla Türkiye'nin en bilinen doğal kaynak sularından biri olarak kabul edilir. Dağlık bölgelerden beslenen kaynaklar, doğal filtrasyon süreciyle arınmış suyun sofralara ulaşmasını sağlar. DAIL GROUP bayiliğinde Sultan Uludağ Su, kaynağındaki tazeliğini koruyarak bölgemize düzenli olarak dağıtılmaktadır.",
+      "Uludağ'ın kaynak suları, düşük mineral içeriği ve yüksek saflık oranıyla Türkiye'nin en bilinen doğal kaynak sularından biri olarak kabul edilir. Dağlık bölgelerden beslenen kaynaklar, doğal filtrasyon süreciyle arınmış suyun sofralara ulaşmasını sağlar. DAİL GRUP bayiliğinde Sultan Uludağ Su, kaynağındaki tazeliğini koruyarak bölgemize düzenli olarak dağıtılmaktadır.",
     color: "#1447a3",
     logo: "",
     cover: "/images/icecek/icecek-sultan-prime-su-siseleri-01.jpg",
@@ -145,9 +145,9 @@ export const brands: Brand[] = [
     category: "icecek",
     tagline: "Enerjinin adresi.",
     description:
-      "Hotline Energy enerji içeceği, dinamik yaşam tarzını destekleyen formülüyle DAIL GROUP'un içecek portföyünün güçlü bir parçasıdır.",
+      "Hotline Energy enerji içeceği, dinamik yaşam tarzını destekleyen formülüyle DAİL GRUP'un içecek portföyünün güçlü bir parçasıdır.",
     about:
-      "Enerji içecekleri; kafein ve çeşitli vitamin bileşenleriyle anlık enerji ve odaklanma ihtiyacı duyulan anlarda tercih edilen içecek grubudur. Yoğun iş temposu, spor aktiviteleri ya da uzun mesai saatlerinde dengeli tüketildiğinde pratik bir destek sağlar. DAIL GROUP olarak Hotline Energy'yi market, kafe ve eğlence mekanlarına düzenli tedarik ile ulaştırıyoruz.",
+      "Enerji içecekleri; kafein ve çeşitli vitamin bileşenleriyle anlık enerji ve odaklanma ihtiyacı duyulan anlarda tercih edilen içecek grubudur. Yoğun iş temposu, spor aktiviteleri ya da uzun mesai saatlerinde dengeli tüketildiğinde pratik bir destek sağlar. DAİL GRUP olarak Hotline Energy'yi market, kafe ve eğlence mekanlarına düzenli tedarik ile ulaştırıyoruz.",
     color: "#111111",
     logo: "",
     cover: "/images/icecek/icecek-hotline-enerji-icecegi-01.jpg",
@@ -162,9 +162,9 @@ export const brands: Brand[] = [
     category: "icecek",
     tagline: "Doğal maden suyunun klasiği.",
     description:
-      "Kızılay Soda, uzun yıllardır güvenilirliğiyle bilinen doğal maden suyu markası olarak DAIL GROUP bayiliğinde bölgemize sunulmaktadır.",
+      "Kızılay Soda, uzun yıllardır güvenilirliğiyle bilinen doğal maden suyu markası olarak DAİL GRUP bayiliğinde bölgemize sunulmaktadır.",
     about:
-      "Kızılay Soda, Türkiye'de doğal maden sodası denince akla ilk gelen köklü markalardan biridir. Doğal kaynağından gelen mineral yapısı ve karakteristik tadıyla uzun yıllardır restoran ve ev sofralarında yerini korumaktadır. DAIL GROUP bayiliğinde Kızılay Soda, bölgemizdeki işletmelere düzenli ve kesintisiz olarak ulaştırılmaktadır.",
+      "Kızılay Soda, Türkiye'de doğal maden sodası denince akla ilk gelen köklü markalardan biridir. Doğal kaynağından gelen mineral yapısı ve karakteristik tadıyla uzun yıllardır restoran ve ev sofralarında yerini korumaktadır. DAİL GRUP bayiliğinde Kızılay Soda, bölgemizdeki işletmelere düzenli ve kesintisiz olarak ulaştırılmaktadır.",
     color: "#c81414",
     logo: "",
     cover: "/images/icecek/icecek-kizilay-soda-cesitleri-01.jpg",
@@ -179,9 +179,9 @@ export const brands: Brand[] = [
     category: "insaat",
     tagline: "Temelden anahtar teslimine.",
     description:
-      "DAIL GROUP İnşaat, konut ve ticari projelerde proje yönetiminden uygulamaya, uçtan uca inşaat ve taahhüt hizmetleri sunar. Deneyimli ekibimizle güvenli ve zamanında teslimat önceliğimizdir.",
+      "DAİL GRUP İnşaat, konut ve ticari projelerde proje yönetiminden uygulamaya, uçtan uca inşaat ve taahhüt hizmetleri sunar. Deneyimli ekibimizle güvenli ve zamanında teslimat önceliğimizdir.",
     about:
-      "Bir inşaat projesinin başarısı; doğru proje planlaması, kaliteli malzeme seçimi, alanında uzman iş gücü ve şantiye güvenliğine gösterilen özenle doğrudan ilişkilidir. Konut, ticari yapı ya da altyapı projelerinde zamanında teslimat kadar, yapının uzun ömürlü ve güvenli olması da önceliklidir. DAIL GROUP İnşaat olarak projelerimizde bu ilkeleri temel alarak, planlamadan anahtar teslime kadar her aşamada müşteri memnuniyetini ön planda tutuyoruz.",
+      "Bir inşaat projesinin başarısı; doğru proje planlaması, kaliteli malzeme seçimi, alanında uzman iş gücü ve şantiye güvenliğine gösterilen özenle doğrudan ilişkilidir. Konut, ticari yapı ya da altyapı projelerinde zamanında teslimat kadar, yapının uzun ömürlü ve güvenli olması da önceliklidir. DAİL GRUP İnşaat olarak projelerimizde bu ilkeleri temel alarak, planlamadan anahtar teslime kadar her aşamada müşteri memnuniyetini ön planda tutuyoruz.",
     color: "#2b2e83",
     logo: "",
     cover: "",
@@ -215,7 +215,7 @@ export const stats: StatItem[] = [
 export const aboutContent: AboutContent = {
   title: "Yılların Tecrübesi, Güvenin Adresi",
   description:
-    "DAIL GROUP olarak gıda, içecek ve inşaat sektörlerinde edindiğimiz köklü tecrübeyi; güçlü bayilik ağımız, geniş lojistik kapasitemiz ve müşteri odaklı hizmet anlayışımızla birleştiriyoruz. Yakup Ağa Et Ürünleri, A Piliç, Beysu, Avşar Soda, Sultan Uludağ Su, Hotline Energy ve Kızılay Soda gibi güvenilir markaların bölgemizdeki resmi bayisi olarak, işletmenizin ihtiyaç duyduğu ürünleri zamanında ve eksiksiz teslim ediyoruz. İnşaat alanındaki hizmetlerimizle de aynı güven ve kaliteyi yapı projelerine taşıyoruz.",
+    "DAİL GRUP olarak gıda, içecek ve inşaat sektörlerinde edindiğimiz köklü tecrübeyi; güçlü bayilik ağımız, geniş lojistik kapasitemiz ve müşteri odaklı hizmet anlayışımızla birleştiriyoruz. Yakup Ağa Et Ürünleri, A Piliç, Beysu, Avşar Soda, Sultan Uludağ Su, Hotline Energy ve Kızılay Soda gibi güvenilir markaların bölgemizdeki resmi bayisi olarak, işletmenizin ihtiyaç duyduğu ürünleri zamanında ve eksiksiz teslim ediyoruz. İnşaat alanındaki hizmetlerimizle de aynı güven ve kaliteyi yapı projelerine taşıyoruz.",
   mission:
     "İş ortaklarımıza kesintisiz, kaliteli ve güvenilir tedarik ile hizmet sunarak sektörümüzde referans bir marka olmak.",
   vision:
@@ -248,13 +248,13 @@ export const aboutContent: AboutContent = {
     },
     {
       year: "Bugün",
-      title: "DAIL GROUP",
+      title: "DAİL GRUP",
       description:
         "8 bayilik ve inşaat hizmetleriyle bölgemizin güvenilir iş ortağı olduk.",
     },
   ],
   managementMessage:
-    "DAIL GROUP olarak kurulduğumuz günden bu yana temel önceliğimiz; iş ortaklarımıza güven veren, sürdürülebilir ve kaliteli bir hizmet sunmak oldu. Bu prensipten hiçbir zaman ödün vermeden büyümeye devam ediyoruz.",
+    "DAİL GRUP olarak kurulduğumuz günden bu yana temel önceliğimiz; iş ortaklarımıza güven veren, sürdürülebilir ve kaliteli bir hizmet sunmak oldu. Bu prensipten hiçbir zaman ödün vermeden büyümeye devam ediyoruz.",
 };
 
 const rawAddress = "Güzelyurt, 26223 Sok No:22, 07112 Aksu/Antalya";
@@ -263,7 +263,7 @@ export const contactInfo: ContactInfo = {
   address: rawAddress,
   phone: "+90 532 651 18 30",
   whatsapp: "905326511830",
-  email: "info@dailgroup.com",
+  email: "info@dailgrup.com",
   mapEmbedUrl: `https://maps.google.com/maps?q=${encodeURIComponent(rawAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`,
   workingHours: "Pazartesi - Cumartesi: 08:00 - 18:00",
   social: {},

@@ -1,5 +1,5 @@
 -- =========================================================================
--- DAIL GROUP — Supabase schema
+-- DAİL GRUP — Supabase schema
 -- Run this in the Supabase SQL editor (or via `supabase db push`) once per
 -- project. Safe to re-run: uses IF NOT EXISTS / CREATE OR REPLACE guards.
 -- =========================================================================

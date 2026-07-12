@@ -20,9 +20,9 @@ const bricolage = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "DAIL GROUP | Güçlü Markalar, Güvenilir İş Ortağınız",
+  title: "DAİL GRUP | Güçlü Markalar, Güvenilir İş Ortağınız",
   description:
-    "DAIL GROUP; gıda, içecek ve inşaat sektörlerinde Yakup Ağa Et Ürünleri, A Piliç, Beysu, Avşar Soda, Sultan Uludağ Su, Hotline Energy ve Kızılay Soda bayilikleriyle hizmet veren güvenilir iş ortağınızdır.",
+    "DAİL GRUP; gıda, içecek ve inşaat sektörlerinde Yakup Ağa Et Ürünleri, A Piliç, Beysu, Avşar Soda, Sultan Uludağ Su, Hotline Energy ve Kızılay Soda bayilikleriyle hizmet veren güvenilir iş ortağınızdır.",
 };
 
 export default function RootLayout({

@@ -20,7 +20,7 @@ export async function generateMetadata({
   const brand = await getBrandBySlug(slug);
   if (!brand) return {};
   return {
-    title: `${brand.name} | DAIL GROUP`,
+    title: `${brand.name} | DAİL GRUP`,
     description: brand.description,
   };
 }

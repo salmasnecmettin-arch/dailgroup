@@ -21,8 +21,9 @@ export function AboutTeaser() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-xs font-semibold tracking-[0.25em] text-dail-red-500">
-            DAILGROUP
+          <p className="text-xs font-semibold tracking-[0.25em]">
+            <span className="text-dail-red-500">DAİL</span>{" "}
+            <span className="text-dail-navy-500">GRUP</span>
           </p>
           <h2 className="font-display mt-4 text-3xl font-bold leading-tight text-dail-navy-900 sm:text-4xl lg:text-5xl">
             Yılların Tecrübesi,

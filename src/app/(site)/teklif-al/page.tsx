@@ -4,7 +4,7 @@ import { InquiryForm } from "@/components/site/inquiry-form";
 import { getBrands } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Fiyat Bilgi Formu | DAIL GROUP",
+  title: "Fiyat Bilgi Formu | DAİL GRUP",
   description: "Ürün ve hizmetlerimiz hakkında fiyat bilgisi almak için formu doldurun.",
 };
 
